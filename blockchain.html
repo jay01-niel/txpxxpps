@@ -1,0 +1,260 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>TaraxaPad | PixelGenie Lauch</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="assets/img/tpad-icon-3.png">
+
+    <!-- ***** All CSS Files ***** -->
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+</head>
+
+<body>
+
+
+    <div class="main">
+        <!-- ***** Header Start ***** -->
+        <header id="header">
+            <!-- Navbar -->
+            <nav data-aos="zoom-out" data-aos-delay="800" class="navbar gameon-navbar navbar-expand">
+                <div class="container header">
+
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo/logo.png" alt="Brand Logo" />
+                    </a>
+
+                    <div class="ml-auto"></div>
+
+                    <!-- Navbar Nav -->
+                    <ul class="navbar-nav items mx-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">Projects <i></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">Staking <i></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">Docs <i></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://t.me/taraxapad" class="nav-link">Community</a>
+                        </li>
+                    </ul>
+
+                   
+
+                    <!-- Navbar Toggler -->
+                    <ul class="navbar-nav toggle">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#menu">
+                                <i class="icon-menu m-0"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Navbar Action Button -->
+                    <ul class="navbar-nav action">
+                        <li class="nav-item ml-2">
+                            <button id="buttonText" class="btn ml-lg-auto btn-bordered-white" onclick="Connect()"><i class="icon-wallet mr-md-2"></i>Wallet Connect</button>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+
+   
+
+        <!-- ***** Item Details Area Start ***** -->
+        <section class="item-details-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-5">
+                    <h4>MINI BLOCKCHAIN INTERACTOR</h4>
+
+                    <button class="btn btn-bordered-white btn-smaller" onclick="openClaiming()">OpenClaiming</button>
+                    <br/>
+                    <br/>
+                    <button class="btn btn-bordered-white btn-smaller" onclick="closeClaiming()">CloseClaiming</button>
+                    <br/>
+                    <br/>
+                    <button class="btn btn-bordered-white btn-smaller" onclick="withdrawFunds()">WithdrawFunds</button>
+                    <br/>
+                    <br/>
+
+                    <div class="project-footer d-flex align-items-center mt-4 mt-md-5">
+                        <form id="depositDetails">
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="DAmount" placeholder="Amount" required><br>
+                            </div>
+                         
+                            <button id="dBtn" class="btn btn-bordered-white btn-smaller" type="submit">depositTokens</button>
+                        </form>
+                    </div>
+
+                    <div class="project-footer d-flex align-items-center mt-4 mt-md-5">
+                        <form id="withdrawalDetails">
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="WAmoun" placeholder="Amount" required><br>
+                            </div>
+                         
+                            <button id="wBtn" class="btn btn-bordered-white btn-smaller" type="submit">WithdrawTokens</button>
+                        </form>
+                    </div>
+                  
+
+
+                    <div class="project-footer d-flex align-items-center mt-4 mt-md-5">
+                        <form id="transForm">
+                         <div class="form-group">
+                            <input type="text" class="form-control" id="wAddress" placeholder="address" required><br>
+                         </div>
+                            <button id="tBtn" type="submit" class="btn btn-bordered-white btn-smaller">TransferOwnership</button>
+                        </form>
+                    </div>
+
+                    
+
+                    <br/>
+                    <br/>
+
+                </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!--====== Footer Area Start ======-->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 text-center">
+                        <!-- Footer Items -->
+                        <div class="footer-items">
+                            <!-- Logo -->
+                            <a class="navbar-brand" href="index.html" id="navbar-shrink">
+                                <img src="assets/img/logo/logo.png" alt="">
+                            </a>
+                            <!-- Social Icons -->
+                            <div class="social-icons d-flex justify-content-center my-4">
+                                <a class="twitter" href="https://twitter.com/" target="_blank">
+                                    <i class="icon-social-twitter"></i>
+                                    <i class="icon-social-twitter"></i>
+                                </a>
+                                <a class="reddit" href="https://taraxapad.gitbook.io/taraxapad-docs" target="_blank">
+                                    <i class="icon-social-github"></i>
+                                    <i class="icon-social-github"></i>
+                                </a>
+                                <!--<a class="vkontakte" href="https://discord.com/" target="_blank">
+                                    <i class="icon-social-vkontakte"></i>
+                                    <i class="icon-social-vkontakte"></i>
+                                </a>-->
+                                <!--<a class="youtube" href="https://www.youtube.com/" target="_blank">
+                                    <i class="icon-social-youtube"></i>
+                                    <i class="icon-social-youtube"></i>
+                                </a>-->
+                            </div>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#">Docs</a></li>
+                                <li class="list-inline-item"><a href="#">Roadmap</a></li>
+                                <li class="list-inline-item"><a href="https://t.me/taraxapad">Telegram</a></li>
+                                <!--<li class="list-inline-item"><a href="blog.html">Youtube</a></li>-->
+                            </ul>
+                            <!-- Copyright Area -->
+                            <div class="copyright-area py-4">Made with ❤️ by TaraxaPad</div>
+                        </div>
+                        <!-- Scroll To Top -->
+                        <div id="scroll-to-top" class="scroll-to-top">
+                            <a href="#header" class="smooth-anchor">
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--====== Footer Area End ======-->
+
+        <!--====== Modal Search Area Start ======-->
+        <!--<div id="search" class="modal fade p-0">
+            <div class="modal-dialog dialog-animated">
+                <div class="modal-content h-100">
+                    <div class="modal-header" data-dismiss="modal">
+                        Search <i class="far fa-times-circle icon-close"></i>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row">
+                            <div class="col-12 align-self-center">
+                                <div class="row">
+                                    <div class="col-12 pb-3">
+                                        <h2 class="search-title mt-0 mb-3">What are you looking for?</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 input-group mt-md-4">
+                                        <input type="text" placeholder="Enter your keywords">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 input-group align-self-center">
+                                        <button class="btn btn-bordered-white mt-3">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!--====== Modal Search Area End ======-->
+
+    
+
+
+    <!-- ***** All jQuery Plugins ***** -->
+
+        <!-- Meta Mask Connect -->
+        <script src="assets/js/web3.min.js"></script>
+        <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- jQuery(necessary for all JavaScript plugins) -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+    <!-- Plugins js -->
+    <script src="assets/js/vendor/all.min.js"></script>
+    <script src="assets/js/vendor/gallery.min.js"></script>
+    <script src="assets/js/vendor/slider.min.js"></script>
+    <script src="assets/js/vendor/countdown.min.js"></script>
+    <script src="assets/js/vendor/shuffle.min.js"></script>
+
+    <!-- Active js -->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/metamask.js"></script>
+        <script src="assets/js/metamaskhandler.js"></script>
+</body>
+
+</html>

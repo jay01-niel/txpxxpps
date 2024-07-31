@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>TaraxaPad | PixelGenie Lauch</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="assets/img/tpad-icon-3.png" />
+
+    <!-- ***** All CSS Files ***** -->
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </head>
+
+  <body>
+    <!--====== Preloader Area Start ======-->
+
+    <!--====== Preloader Area End ======-->
+
+    <div class="main">
+      <!-- ***** Header Start ***** -->
+      <header id="header">
+        <!-- Navbar -->
+        <nav
+          data-aos="zoom-out"
+          data-aos-delay="800"
+          class="navbar gameon-navbar navbar-expand"
+        >
+          <div class="container header">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/img/logo/logo.png" alt="Brand Logo" />
+            </a>
+
+            <div class="ml-auto"></div>
+
+            <!-- Navbar Nav -->
+            <ul class="navbar-nav items mx-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link">Projects <i></i></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link">Staking <i></i></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link">Docs <i></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="https://t.me/taraxapad" class="nav-link">Community</a>
+              </li>
+            </ul>
+
+            <!-- Navbar Icons -->
+            <!--<ul class="navbar-nav icons">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#search">
+                                <i class="icon-magnifier"></i>
+                            </a>
+                        </li>
+                    </ul>-->
+
+            <!-- Navbar Toggler -->
+            <ul class="navbar-nav toggle">
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link"
+                  data-toggle="modal"
+                  data-target="#menu"
+                >
+                  <i class="icon-menu m-0"></i>
+                </a>
+              </li>
+            </ul>
+
+            <!-- Navbar Action Button -->
+            <ul class="navbar-nav action">
+              <li class="nav-item ml-2">
+                <button
+                  id="buttonText"
+                  class="btn ml-lg-auto btn-bordered-white"
+                  onclick="Connect()"
+                >
+                  <i class="icon-wallet mr-md-2"></i>Wallet Connect
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!-- ALERTS -->
+      <div id="notification" class="notification"></div>
+      <!-- ALERTS -->
+      <!-- ***** Header End ***** -->
+
+      <!-- ***** Breadcrumb Area Start ***** -->
+      <section class="breadcrumb-area overlay-dark d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <!-- Breamcrumb Content -->
+              <!-- <div class="breadcrumb-content text-center">
+                            <h2 class="m-0">Project Details</h2>
+                            <ol class="breadcrumb d-flex justify-content-center">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Project</a></li>
+                                <li class="breadcrumb-item active">Project Details</li>
+                            </ol>
+                        </div>-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ***** Breadcrumb Area End ***** -->
+
+      <!-- ***** Item Details Area Start ***** -->
+      <section class="item-details-area">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-12 col-lg-5">
+              <!-- Project Card -->
+              <div class="card project-card no-hover">
+                <div class="media">
+                  <img
+                    class="card-img-top avatar-max-lg"
+                    src="assets/img/content/genie-marketplace-logo.png"
+                    alt=""
+                  />
+                  <div class="media-body ml-4">
+                    <h4 class="m-0">PixelGenie Marketplace</h4>
+                    <div class="countdown-times">
+                      <h6 class="my-2">Registration in:</h6>
+                      <div
+                        class="countdown d-flex"
+                        data-date="2022-06-30"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project Body -->
+                <div class="card-body">
+                  <div class="items">
+                    <!-- Single Item -->
+                    <div class="single-item">
+                      <span>Total raised</span>
+                      <span id="totalRaised">0</span>
+                    </div>
+                    <!-- Single Item -->
+                    <div class="single-item">
+                      <span>Value</span>
+                      <span id="valueDollar">0</span>
+                    </div>
+                    <!-- Single Item -->
+                    <div class="single-item">
+                      <span>Min allocation</span>
+                      <span>$150</span>
+                    </div>
+                  </div>
+                  <div class="item-progress">
+                    <div class="progress mt-4 mt-md-5">
+                      <div
+                        id="percentageBar"
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="84"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        0%
+                      </div>
+                    </div>
+                    <div
+                      class="progress-sale d-flex justify-content-between mt-3"
+                    >
+                      <span>
+                        <span id="sold"> 0 </span> /
+                        <span id="left"> 0 </span> GENIE
+                      </span>
+
+                      <span id="">1 = 42 GENIE</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project Footer -->
+                <div
+                  class="project-footer d-flex align-items-center mt-4 mt-md-5"
+                >
+                  <!-- BUY FORM -->
+
+                  <form id="buyform">
+                    <div class="form-group">
+                      <input
+                        type="number"
+                        step="any"
+                        class="form-control"
+                        id="amount"
+                        placeholder="Amount"
+                        required
+                      />
+                    </div>
+
+                    <button
+                      type="submit"
+                      id="buyBtn"
+                      class="btn btn-bordered-white btn-smaller"
+                    >
+                      Buy
+                    </button>
+                  </form>
+
+                  <!-- <a class="btn btn-bordered-white btn-smaller" onclick="()">Buy Presale</a> -->
+                </div>
+
+                <div class="mt-4">
+                  <button
+                    id="claimBtn"
+                    class="btn btn-bordered-white btn-smaller"
+                    onclick="claimToken()"
+                  >
+                    Claim Tokens
+                  </button>
+                </div>
+
+                <div
+                  class="project-footer d-flex align-items-center mt-4 mt-md-5"
+                >
+                  <!-- Social Share -->
+                  <div class="social-share ml-auto">
+                    <ul class="d-flex list-unstyled">
+                      <li>
+                        <a href="#">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fab fa-telegram"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fas fa-globe"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Blockchain Icon -->
+                <div class="blockchain-icon">
+                  <img src="assets/img/" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-7 items mt-5 mt-lg-0">
+              <div
+                class="card project-card single-item-content no-hover item ml-lg-4"
+              >
+                <h3 class="m-0">Project Summary</h3>
+                <p>
+                  PixelGenie is an NFT platform designed to be a digital
+                  marketplace that'll enable users discover, trade, and create
+                  NFTs native to the Taraxa blockDag. Additionally, our mission
+                  is to provide collection owners with an array of tools to
+                  design, create, and offer unique utilities to their
+                  communities, all while eliminating the technical complexities
+                  that often hinder aspiring creators.
+                </p>
+                <p></p>
+              </div>
+              <div
+                class="card project-card single-item-content no-hover item p-0 ml-lg-4"
+              >
+                <div class="image-over">
+                  <img
+                    class="card-img-top"
+                    src="assets/img/content/p-banner-518x518-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card-caption col-12 p-0">
+                  <div class="card-body p-0">
+                    <!--<div class="play-btn gallery display-yes">
+                                        <a href="https://www.youtube.com/watch?v=fzBTvDraO5U">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </div>-->
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card project-card single-item-content no-hover item ml-lg-4"
+              >
+                <h3 class="m-0">Project Overview</h3>
+                <p class="mb-0">
+                  PixelGenie aims to enhance the NFT ecosystem by offering a
+                  comprehensive suite of tools and features for creators and
+                  collectors alike. Here are the outstanding features of
+                  PixelGenie:
+                </p>
+                <h4>Features</h4>
+                <ul>
+                  <li>
+                    <b>Effortless NFT Creation:</b> Transform your media into
+                    NFTs at a low cost. Convert JPEGs to NFTs in seconds,
+                    complete with metadata support.
+                  </li>
+                  <li>
+                    <b>Seamless Collection Management:</b> Easily create and
+                    manage your own NFT collection through the "Create My NFT"
+                    section on PixelGenie.
+                  </li>
+                  <li>
+                    <b>Flexible Purchasing Options:</b> Acquire listed NFTs by
+                    either (1) buying at a fixed price or (2) making an offer on
+                    an NFT.
+                  </li>
+                  <li>
+                    <b>Versatile Marketplace:</b> Sell or auction any NFTs you
+                    own, not just those obtained through PixelGenie. Taraxa's
+                    low gas costs facilitate the sale of lower-priced NFTs.
+                  </li>
+                  <li>
+                    <b>Comprehensive Collection Viewing:</b> Access all listed
+                    NFT collections from the Homepage or Collections page.
+                  </li>
+                  <li>
+                    <b>Quality NFTs:</b> PixelGenie offers users the opportunity
+                    to buy and trade high-quality NFTs, ensuring an exceptional
+                    experience for creators and collectors.
+                  </li>
+                  <li>
+                    <b>Liquidity Provision:</b> Provide liquidity for your
+                    project in our NFT pool by creating an NFT staking pool to
+                    incentivize your holders.
+                  </li>
+                  <li>
+                    <b>On-Chain Royalty Support:</b> Earn royalties on every
+                    sale of your minted NFTs on PixelGenie, with full on-chain
+                    support.
+                  </li>
+                  <li>
+                    <b>Transaction Flexibility:</b> Conduct transactions using
+                    TARA or our official token ($GENIE) on the PixelGenie
+                    marketplace.
+                  </li>
+                  <li>
+                    <b>Collateralized Lending:</b> Use your NFTs as collateral
+                    to borrow $GENIE or TARA, leveraging the value of your
+                    digital assets.
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="card project-card single-item-content no-hover item ml-lg-4"
+              >
+                <h3 class="m-0">Tokenomics</h3>
+                <p>
+                  Even the all-powerful Pointing has no control about the blind
+                  texts it is an almost unorthographic life One day however a
+                  small line of blind text by the name of Lorem Ipsum decided to
+                  leave for the far World of Grammar.
+                </p>
+                <!-- Token Content -->
+                <div class="table-responsive">
+                  <table class="table token-content table-borderless table-sm">
+                    <tbody>
+                      <tr>
+                        <td>Staking rewards:</td>
+                        <td>40%</td>
+                      </tr>
+                      <tr>
+                        <td>Presale:</td>
+                        <td>25%</td>
+                      </tr>
+                      <tr>
+                        <td>Liquidity:</td>
+                        <td>15%</td>
+                      </tr>
+                      <tr>
+                        <td>Treasury:</td>
+                        <td>8%</td>
+                      </tr>
+                      <tr>
+                        <td>Team:</td>
+                        <td>5.5%</td>
+                      </tr>
+                      <tr>
+                        <td>Partnership:</td>
+                        <td>3%</td>
+                      </tr>
+                      <tr>
+                        <td>Platform rewards:</td>
+                        <td>2.5%</td>
+                      </tr>
+                      <tr>
+                        <td>Miscellaneous:</td>
+                        <td>1%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div
+                class="card project-card single-item-content no-hover item ml-lg-4"
+              >
+                <h3 class="m-0">Roadmap</h3>
+                <p>
+                  Welcome to the PixelGenie Roadmap, a summarized version of our
+                  whitepaper outlining our journey to becoming a premier NFT
+                  marketplace. For a more detailed roadmap, please refer to our
+                  whitepaper. It contains details of our phased approach to
+                  development, from our initial vision and foundational features
+                  to expansive growth and advanced utilities.
+                </p>
+                <h3 class="roadmap">Phase 1: The Start</h3>
+                <li>
+                  Establish PixelGenie as an NFT marketplace on Taraxa, focused
+                  on user-centric design.
+                </li>
+                <li>
+                  Outline essential functionalities including NFT creation,
+                  buying, bidding, selling, and governance utilizing the $GENIE
+                  token.
+                </li>
+                <li>
+                  Release the comprehensive PixelGenie whitepaper, detailing
+                  marketplace features, governance structure, and technical
+                  specifications.
+                </li>
+                <li>
+                  Provide in-depth information on our platform's features and
+                  projected milestones.
+                </li>
+                <li>
+                  Partner with projects on Taraxa to bolster our platform’s
+                  reach and capabilities.
+                </li>
+                <li>
+                  Present a first look at the marketplace, showcasing its unique
+                  features and functionalities to the PixelGenie community.
+                </li>
+                <li>Begin the presale of the $GENIE token.</li>
+                <li>
+                  Launch the $GENIE token following the completion of the
+                  presale.
+                </li>
+                <h3 class="roadmap">Phase 2: Feature Expansion</h3>
+                <li>
+                  Continuously refine the user interface to ensure seamless and
+                  intuitive interactions.
+                </li>
+                <li>
+                  Integrate user-friendly tools for NFT creation, buying, and
+                  selling.
+                </li>
+                <li>
+                  Officially launch the PixelGenie marketplace on the Taraxa
+                  Mainnet.
+                </li>
+                <li>
+                  Enable comprehensive functionality for NFT creation, listing,
+                  bidding, and transactions.
+                </li>
+                <li>
+                  Introduce a launchpad feature to facilitate the release of new
+                  NFT projects via our exclusive NFT minting dApp.
+                </li>
+                <li>
+                  Implement $GENIE staking and farming mechanisms to incentivize
+                  holders.
+                </li>
+                <li>
+                  Gather user feedback to drive ongoing platform enhancements
+                  and ensure alignment with user needs and technological
+                  advancements.
+                </li>
+                <h3 class="roadmap">Phase 3: Utility and Ecosystem Growth</h3>
+                <li>
+                  Introduce new utilities for the $GENIE token to increase its
+                  value and functionality within the ecosystem.
+                </li>
+                <li>
+                  Launch the PixelGenie NFT lending and borrowing platform,
+                  providing new financial opportunities for users.
+                </li>
+                <li>
+                  Fully deploy the governance model, empowering $GENIE holders
+                  to influence platform decisions.
+                </li>
+                <li>
+                  Enable proposals and voting on critical platform developments
+                  and policies through GenieDAO.
+                </li>
+                <li>
+                  Develop and deploy additional tools and services for creators,
+                  enhancing their ability to produce and manage high-quality
+                  NFTs.
+                </li>
+                <li>
+                  Maintain an continuous commitment to platform optimization,
+                  leveraging user feedback and technological advancements to
+                  ensure PixelGenie remains at the forefront of the NFT
+                  marketplace on Taraxa.
+                </li>
+                <hr />
+                <p>
+                  This roadmap outlines a clear, strategic path for PixelGenie,
+                  ensuring the platform's evolution from inception to a fully
+                  realized, community-driven NFT marketplace with a robust
+                  ecosystem and advanced user features.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ***** Item Details Area End ***** -->
+
+      <!-- ***** CTA Area Start ***** -->
+      <section class="cta-area p-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 card">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-md-5 text-center">
+                  <img src="assets/img/content/cta_thumb.png" alt="" />
+                </div>
+                <div class="col-12 col-md-6 mt-4 mt-md-0">
+                  <h2 class="m-0">Apply for IGO</h2>
+                  <p>
+                    Get access to huge set of tools to seamlessly handle your
+                    game's integration with blockchain.
+                  </p>
+                  <a
+                    class="btn btn-bordered active d-inline-block"
+                    href="https://form.typeform.com/to/MQomoMoD"
+                    ><i class="icon-rocket mr-2"></i>Apply Now</a
+                  >
+                </div>
+              </div>
+              <!--<a class="cta-link" href="apply.html"></a>-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ***** CTA Area End ***** -->
+
+      <!--====== Footer Area Start ======-->
+      <footer class="footer-area">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8 text-center">
+              <!-- Footer Items -->
+              <div class="footer-items">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html" id="navbar-shrink">
+                  <img src="assets/img/logo/logo.png" alt="" />
+                </a>
+                <!-- Social Icons -->
+                <div class="social-icons d-flex justify-content-center my-4">
+                  <a
+                    class="twitter"
+                    href="https://twitter.com/"
+                    target="_blank"
+                  >
+                    <i class="icon-social-twitter"></i>
+                    <i class="icon-social-twitter"></i>
+                  </a>
+                  <a
+                    class="reddit"
+                    href="https://taraxapad.gitbook.io/taraxapad-docs"
+                    target="_blank"
+                  >
+                    <i class="icon-social-github"></i>
+                    <i class="icon-social-github"></i>
+                  </a>
+                  <!--<a class="vkontakte" href="https://discord.com/" target="_blank">
+                                    <i class="icon-social-vkontakte"></i>
+                                    <i class="icon-social-vkontakte"></i>
+                                </a>-->
+                  <!--<a class="youtube" href="https://www.youtube.com/" target="_blank">
+                                    <i class="icon-social-youtube"></i>
+                                    <i class="icon-social-youtube"></i>
+                                </a>-->
+                </div>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="#">Docs</a></li>
+                  <li class="list-inline-item"><a href="#">Roadmap</a></li>
+                  <li class="list-inline-item">
+                    <a href="https://t.me/taraxapad">Telegram</a>
+                  </li>
+                  <!--<li class="list-inline-item"><a href="blog.html">Youtube</a></li>-->
+                </ul>
+                <!-- Copyright Area -->
+                <div class="copyright-area py-4">Made with ❤️ by TaraxaPad</div>
+              </div>
+              <!-- Scroll To Top -->
+              <div id="scroll-to-top" class="scroll-to-top">
+                <a href="#header" class="smooth-anchor">
+                  <i class="fa-solid fa-arrow-up"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--====== Footer Area End ======-->
+
+      <!--====== Modal Search Area Start ======-->
+      <!--<div id="search" class="modal fade p-0">
+            <div class="modal-dialog dialog-animated">
+                <div class="modal-content h-100">
+                    <div class="modal-header" data-dismiss="modal">
+                        Search <i class="far fa-times-circle icon-close"></i>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row">
+                            <div class="col-12 align-self-center">
+                                <div class="row">
+                                    <div class="col-12 pb-3">
+                                        <h2 class="search-title mt-0 mb-3">What are you looking for?</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 input-group mt-md-4">
+                                        <input type="text" placeholder="Enter your keywords">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 input-group align-self-center">
+                                        <button class="btn btn-bordered-white mt-3">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+      <!--====== Modal Search Area End ======-->
+
+      <!--====== Modal Responsive Menu Area Start ======-->
+      <div id="menu" class="modal fade p-0">
+        <div class="modal-dialog dialog-animated">
+          <div class="modal-content h-100">
+            <div class="modal-header" data-dismiss="modal">
+              Menu <i class="far fa-times-circle icon-close"></i>
+            </div>
+            <div class="menu modal-body">
+              <div class="row w-100">
+                <div class="items p-0 col-12 text-center"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--====== Modal Responsive Menu Area End ======-->
+    </div>
+
+    <!-- ***** All jQuery Plugins ***** -->
+
+    <!-- Meta Mask Connect -->
+    <script src="assets/js/web3.min.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+
+    <!-- jQuery(necessary for all JavaScript plugins) -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+    <!-- Plugins js -->
+    <script src="assets/js/vendor/all.min.js"></script>
+    <script src="assets/js/vendor/gallery.min.js"></script>
+    <script src="assets/js/vendor/slider.min.js"></script>
+    <script src="assets/js/vendor/countdown.min.js"></script>
+    <script src="assets/js/vendor/shuffle.min.js"></script>
+
+    <!-- Active js -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/metamask.js"></script>
+    <script src="assets/js/metamaskhandler.js"></script>
+  </body>
+</html>

@@ -1,0 +1,441 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>TaraxPad - Launchpad for All</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="assets/img/tpad-icon-3.png">
+
+    <!-- ***** All CSS Files ***** -->
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- ***** Header Start ***** -->
+        <header id="header">
+            <!-- Navbar -->
+            <nav data-aos="zoom-out" data-aos-delay="800" class="navbar gameon-navbar navbar-expand">
+                <div class="container header">
+
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo/logo.png" alt="Brand Logo" class="logo-adjust" />
+                    </a>
+
+                    <div class="ml-auto"></div>
+
+                    <!-- Navbar Nav -->
+                    <ul class="navbar-nav items mx-auto">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">Projects </a>
+                            
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">Staking </a>
+                            
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">Docs</a>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://t.me/taraxapad" class="nav-link">Community</a>
+                        </li>
+                    </ul>
+
+                    <!-- Navbar Icons -->
+                    
+
+                    <!-- Navbar Toggler -->
+                    <ul class="navbar-nav toggle">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#menu">
+                                <i class="icon-menu m-0"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Navbar Action Button -->
+                    <ul class="navbar-nav action">
+                        <li class="nav-item ml-2">
+                            <button id="buttonText" class="btn ml-lg-auto btn-bordered-white" onclick="Connect()"><i class="icon-wallet mr-md-2"></i>Wallet Connect</button>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+        <!-- ***** Header End ***** -->
+
+
+           <!-- ALERTS -->
+    <div id="notification" class="notification"></div>
+    <!-- ALERTS -->
+    
+
+        <!-- ***** Hero Area Start ***** -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-9 text-center">
+                        <!-- Hero Content -->
+                        <div class="hero-content">
+                            <div class="intro text-center mb-5">
+                                <span class="intro-text">TaraxPad</span>
+                                <h1 class="mt-4">Create, Launch and Discover quality projects</h1>
+                                <p>Building on the Taraxa BlackDAG.</p>
+                            </div>
+                            <!-- Buttons -->
+                            <div class="button-group">
+                                <a class="btn btn-bordered active smooth-anchor" href="https://t.me/taraxapad"><i class="icon-rocket mr-2"></i>Join our community</a>
+                                <a class="btn btn-bordered-white" href="https://form.typeform.com/to/MQomoMoD" id="btn-padding"><i class="icon-note mr-2"></i>Apply for Launchpad</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Hero Area End ***** -->
+
+        <!-- ***** Project Area Start ***** -->
+        <section id="explore" class="project-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Intro -->
+                        <div class="intro d-flex justify-content-between align-items-end m-0">
+                            <div class="intro-content">
+                                <span class="intro-text">Projects</span>
+                                <h3 class="mt-3 mb-0">Upcoming Launch</h3>
+                            </div>
+                            <div class="intro-btn">
+                                <a class="btn content-btn" href="">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-slides">
+                    <div class="swiper-container slider-mid items">
+                        <div class="swiper-wrapper">
+                            <!-- Single Slide -->
+                            <div class="swiper-slide item">
+                                <div class="card project-card">
+                                    <div class="media">
+                                        <a href="TaraxaPad-PixelGenie-Launchpad.html">
+                                            <img class="card-img-top avatar-max-lg" src="assets/img/content/genie-marketplace-logo.png" alt="">
+                                        </a>
+                                        <div class="media-body ml-4">
+                                            <a href="TaraxaPad-PixelGenie-Launchpad.html">
+                                                <h4 class="m-0">PixelGenie Marketplace</h4>
+                                            </a>
+                                            <div class="countdown-times">
+                                                <h6 class="my-2">Coming Soon:</h6>
+                                                <div class="countdown d-flex" data-date="2022-06-30"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Project Body -->
+                                    <div class="card-body">
+                                        <div class="items">
+                                          <!-- Single Item -->
+                                          <div class="single-item">
+                                            <span>Total raised</span>
+                                            <span id="totalRaise">0</span>
+                                          </div>
+                                          <!-- Single Item -->
+                                          <div class="single-item">
+                                            <span>Value</span>
+                                            <span id="valueDolla">0</span>
+                                          </div>
+                                          <!-- Single Item -->
+                                          <div class="single-item">
+                                            <span>Min allocation</span>
+                                            <span>$150</span>
+                                          </div>
+                                        </div>
+                                        <div class="item-progress">
+                                          <div class="progress mt-4 mt-md-5">
+                                            <div
+                                              id="percentagebar"
+                                              class="progress-bar"
+                                              role="progressbar"
+                                              aria-valuenow="84"
+                                              aria-valuemin="0"
+                                              aria-valuemax="100"
+                                            >
+                                              0%
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="progress-sale d-flex justify-content-between mt-3"
+                                          >
+                                            <span>
+                                              <span id="sol"> 0 </span> /
+                                              <span id="lef"> 0 </span> GENIE
+                                            </span>
+                      
+                                            <span id="">1 = 42 GENIE</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <!-- Project Footer -->
+                                    <div class="project-footer d-flex align-items-center mt-4 mt-md-5">
+                                        <a class="btn btn-bordered-white btn-smaller" href="TaraxaPad-PixelGenie-Launchpad.html">Participate</a>
+                                        <!-- Social Share -->
+                                        <div class="social-share ml-auto">
+                                            <ul class="d-flex list-unstyled">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fab fa-telegram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fas fa-globe"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Blockchain Icon -->
+                                    <div class="blockchain-icon">
+                                        <img src="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Project Area End ***** -->
+
+        <!-- ***** Ended Project Area Start ***** -->
+       
+        <!-- ***** Ended Project Area End ***** -->
+
+        <!-- ***** Content Area Start ***** -->
+        
+        <!-- ***** Content Area End ***** -->
+
+        <!-- ***** Team Area Start ***** -->
+             <!-- Team Card -->
+    
+        <!-- ***** Team Area End ***** -->
+
+        <!-- ***** Work Area Start ***** -->
+        <section class="work-area">
+            <div class="container" id="pad-container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Intro -->
+                        <div class="intro d-flex justify-content-between align-items-end mb-4">
+                            <div class="intro-content">
+                                <span class="intro-text">TaraxaPad</span>
+                                <h3 class="mt-3 mb-0">How To Participate</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row items">
+                    <div class="col-12 col-sm-6 col-lg-4 item">
+                        <!-- Single Work -->
+                        <div class="single-work">
+                            <i class="icons icon-drawer text-effect"></i>
+                            <h4>Connect to the Network</h4>
+                            <p>Make sure you are connected to the Taraxa Network on your Metamask wallet or any EVM compatible wallet that supports Taraxa.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 item">
+                        <!-- Single Work -->
+                        <div class="single-work">
+                            <i class="icons icon-wallet text-effect"></i>
+                            <h4>Connect your Wallet</h4>
+                            <p>Launch and connect your wallet to the TaraxaPad Launchpad</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 item">
+                        <!-- Single Work -->
+                        <div class="single-work">
+                            <i class="icons icon-rocket text-effect"></i>
+                            <h4>Start Participating</h4>
+                            <p>After you have connected your wallet you can start Participating in presales, Do note that TaraxaPad is permissionless, interact with projects at your own risk.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Work Area End ***** -->
+
+        <!-- ***** CTA Area Start ***** -->
+        <section class="cta-area p-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 card">
+                        <div class="row align-items-center justify-content-center" id="align-group">
+                            <div class="col-12 col-md-5 text-center" id="rocket-img">
+                                <img src="assets/img/content/cta_thumb.png" alt="">
+                            </div>
+                            <div class="col-12 col-md-6 mt-4 mt-md-0">
+                                <h2 class="m-0">Apply for Launchpad</h2>
+                                <p>Click on the apply button to launch your project through TaraxaPad.</p>
+                                <a class="btn btn-bordered active d-inline-block" href="https://form.typeform.com/to/MQomoMoD"><i class="icon-rocket mr-2"></i>Apply Now</a>
+                            </div>
+                        </div>
+                        <!--<a class="cta-link" href="apply.html"></a>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** CTA Area End ***** -->
+
+        <!--====== Footer Area Start ======-->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 text-center">
+                        <!-- Footer Items -->
+                        <div class="footer-items">
+                            <!-- Logo -->
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/img/logo/logo.png" alt="" id="footer-logo">
+                            </a>
+                            <!-- Social Icons -->
+                            <div class="social-icons d-flex justify-content-center my-4">
+                                
+                                <a class="twitter" href="https://twitter.com/Taraxapad" target="_blank">
+                                    <i class="icon-social-twitter"></i>
+                                    <i class="icon-social-twitter"></i>
+                                </a>
+                                <a class="youtube" href="https://taraxapad.gitbook.io/taraxapad-docs" target="_blank">
+                                    <i class="icon-social-github"></i>
+                                    <i class="icon-social-github"></i>
+                                </a>
+                            </div>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#">Docs</a></li>
+                                <li class="list-inline-item"><a href="#">Roadmap</a></li>
+                                <li class="list-inline-item"><a href="#">Projects</a></li>
+                                <li class="list-inline-item"><a href="https://t.me/taraxapad">Telegram</a></li>
+                            </ul>
+                            <!-- Copyright Area -->
+                            <div class="copyright-area py-4">&copy;2024 TaraxaPad.</a></div>
+                        </div>
+                        <!-- Scroll To Top -->
+                        <div id="scroll-to-top" class="scroll-to-top">
+                            <a href="#header" class="smooth-anchor">
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--====== Footer Area End ======-->
+
+        <!--====== Modal Search Area Start ======-->
+        <!--<div id="search" class="modal fade p-0">
+            <div class="modal-dialog dialog-animated">
+                <div class="modal-content h-100">
+                    <div class="modal-header" data-dismiss="modal">
+                        Search <i class="far fa-times-circle icon-close"></i>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row">
+                            <div class="col-12 align-self-center">
+                                <div class="row">
+                                    <div class="col-12 pb-3">
+                                        <h2 class="search-title mt-0 mb-3">What are you looking for?</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 input-group mt-md-4">
+                                        <input type="text" placeholder="Enter your keywords">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 input-group align-self-center">
+                                        <button class="btn btn-bordered-white mt-3">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!--====== Modal Search Area End ======-->
+
+        <!--====== Modal Responsive Menu Area Start ======-->
+        <div id="menu" class="modal fade p-0">
+            <div class="modal-dialog dialog-animated">
+                <div class="modal-content h-100">
+                    <div class="modal-header" data-dismiss="modal">
+                        Menu <i class="far fa-times-circle icon-close"></i>
+                    </div>
+                    <div class="menu modal-body">
+                        <div class="row w-100">
+                            <div class="items p-0 col-12 text-center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== Modal Responsive Menu Area End ======-->
+
+    </div>
+
+
+    <!-- ***** All jQuery Plugins ***** -->
+
+    <!-- Meta Mask Connect -->
+    <script src="assets/js/web3.min.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+
+    <!-- jQuery(necessary for all JavaScript plugins) -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+    <!-- Plugins js -->
+    <script src="assets/js/vendor/all.min.js"></script>
+    <script src="assets/js/vendor/gallery.min.js"></script>
+    <script src="assets/js/vendor/slider.min.js"></script>
+    <script src="assets/js/vendor/countdown.min.js"></script>
+    <script src="assets/js/vendor/shuffle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Active js -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/metamask.js"></script>
+    <script src="assets/js/metamaskhandler.js"></script>
+
+</body>
+
+</html>
